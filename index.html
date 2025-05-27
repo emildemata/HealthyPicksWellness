@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f8fff8;
+      color: #2e4d2e;
+    }
+
+    header {
+      background-color: whitesmoke;
+      color: black;
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .site-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2e4d2e;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('nature-banner.jpg') center/cover no-repeat;
+      padding: 60px 20px;
+      text-align: center;
+      color: #fff;
+      background-color: #4caf50;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .service {
+      background: #e6f2e6;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    footer {
+      background: #4caf50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .framed-video {
+      max-width: 1000px;
+      width: 100%;
+      margin: auto;
+      display: block;
+      border: 5px solid #4caf50;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .image-gallery img {
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px greenyellow;
+    }
+
+    /* ✅ Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .logo-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .site-title {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 40px 10px;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .framed-video {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+      }
+
+      .image-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-gallery img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Healthy Picks Wellness Logo" class="logo" />
+      <span class="site-title">
+        <marquee>Healthy Picks..."Your Wellness is our Business"</marquee>
+      </span>
+    </div>
+    <br />
+    <nav>
+      <ul>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#clienttestimonials">Testimonials</a></li>
+        <li><a href="#booknow">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <video src="introvideo.mp4" controls autoplay class="framed-video"></video>
+
+  <header>
+    <h1>Gallery</h1>
+  </header>
+
+  <div class="image-gallery">
+    <img src="clienttestimonials01.jpg" alt="Image 1">
+    <img src="clienttestimonials04.jpg" alt="Image 2">
+    <img src="clienttestimonials05.jpg" alt="Image 3">
+    <img src="clienttestimonials02.jpg" alt="Image 4">
+    <img src="clienttestimonials15.jpg" alt="Image 5">
+    <img src="clienttestimonials13.jpg" alt="Image 6">
+    <img src="clienttestimonials11.jpg" alt="Image 7">
+    <img src="clienttestimonials12.jpg" alt="Image 8">
+    <img src="clienttestimonials09.jpg" alt="Image 9">
+  </div>
+
+  <section class="hero">
+    <h1>Healthy Picks Wellness</h1>
+    <p>We use Iridology as a powerful tool for health analysis, helping you find the real cause of your health issues. We also share safe and natural healing methods that you can do at home. Take charge of your health the natural way!</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      We are naturopathy professionals offering natural healing therapies to restore your body and mind. Our philosophy is simple: trust the healing power of nature.
+    </p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Herbal Medicine</h3>
+        <p>Plant-based healing remedies tailored to your needs.</p>
+      </div>
+      <div class="service">
+        <h3>Massage Therapy</h3>
+        <p>Relax and rejuvenate with holistic massage techniques.</p>
+      </div>
+      <div class="service">
+        <h3>Detox Programs</h3>
+        <p>Guided cleanses to eliminate toxins and restore energy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align: center;">
+      📍 Brgy.Mabilo 2, Labo, Camarines Norte Philippines<br>
+      📞 0919-707-1890<br>
+      📧 <a href="mailto:yourhealthypicks@gmail.com" target="_blank">yourhealthypicks@gmail.com</a><br>
+      📘 <a href="https://www.facebook.com/pickshealthy" target="_blank">Facebook Page: Healthy Picks Wellness</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Healthy Picks Wellness. All rights reserved.</p>
+  </footer>
+</body>
+</html>
